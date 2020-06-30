@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "oswald";
+    src: url('../font-family/Oswald-Light.ttf');
+}
+
+@mixin FirstShow {
+    .tabsHolder {
+        display: flex;
+        flex-direction: column;
+        color: #eeeeee;
+        height: 100vh;
+        min-height: 100%;
+        background-color: black;
+        border: none!important;
+        align-items: center !important;
+        .tabtitles {
+            font-size: 14.3px;
+        }
+        .logo {
+            margin: 30px 0px 20px 10px;
+        }
+    }
+    
+    .react-tabs__tab {
+        width: 150px;
+        margin-left: 20px;
+        padding: 7px 0;
+        &:not(:last-child) {
+            border-bottom: 1px solid #333333;
+        }
+        &:hover {
+            color: #ffb400;
+        }
+        &--selected {
+            border-radius: 0!important; 
+            border: 1px solid white;
+            /* background-color: #eeeeee!important; */
+            color:  #ffb400!important;
+        }
+    }
+}
+
+body {
+    font-family: "oswald" !important;
+    @include FirstShow;
+}
