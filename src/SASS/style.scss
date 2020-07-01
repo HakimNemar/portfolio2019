@@ -44,47 +44,69 @@
             color:  #ffb400!important;
         }
     }
-
-    .PhotoHome {
-        height: 100%;
-        position: absolute;
-        right: 0;
+    .HR {
+        height: 5px;
+        width: 75px;
+        color: #ffb400;
+        background-color: #ffb400;
+        border: 0;
+        margin: 25px 0 0 0;
     }
-
-    .absolute {
-        position: absolute;
-        z-index: 1;
-        top: 55%;
-        .colorWhite {
-            // color: white;
-            font-size: 45px;
-            margin-bottom: 8px !important;
+    .PanelHome {
+        .PhotoHome {
+            height: 1090px;
+            width: 1010px;
+            position: fixed;
+            right: 0;
+            top: -30px;
         }
-        .Im {
-            font-size: 45px;
-            display: table-cell;
-            border-top: 1px solid #ffb400;
-            margin-bottom: 10px !important;
-        }
-        .textDescriptif {
-            color: #9b9b9b;
-            border-top: 1px solid #ffb400;
-            border-bottom: 1px solid #ffb400;
-            .size {
-                font-size: 16px;
+        .absolute {
+            position: absolute;
+            z-index: 1;
+            top: 40%;
+            .colorWhite {
+                // color: white;
+                font-size: 45px;
+                margin-bottom: 8px !important;
+            }
+            .Im {
+                font-size: 45px;
+                display: table-cell;
+                border-top: 1px solid #ffb400;
+                margin-bottom: 10px !important;
+            }
+            .textDescriptif {
+                color: #ffb400;
+                margin-top: 90px;
+                border-top: 1px solid #9b9b9b;
+                border-bottom: 1px solid #9b9b9b;
+                .size16 {
+                    font-size: 16px;
+                }
+            }
+            .fontSize {
+                font-size: 60px !important;
             }
         }
     }
-
-    .about {
-        position: absolute;
-        .HR {
-            height: 5px;
-            width: 75px;
-            color: #ffb400;
-            background-color: #ffb400;
-            border: 0;
-            margin: 25px 0 0 0;
+    .PanelAbout {
+        .PhotoAbout {
+            height: 100%;
+            position: fixed !important;
+            right: 0;
+            top: 0;
+        }
+        .aboutMe {
+            ul li {
+                color: #545454;
+                font-family: Arial, Helvetica, sans-serif;
+                border-bottom: 1px solid #dfdfdf;
+                padding: 12px 0;
+            }
+            .profilPro {
+                max-width: fit-content;
+                font-family: Arial, Helvetica, sans-serif;
+            }
         }
     }
 }
