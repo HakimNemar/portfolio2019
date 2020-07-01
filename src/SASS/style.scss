@@ -15,16 +15,21 @@
         align-items: center !important;
         .tabtitles {
             font-size: 14.3px;
+            margin: 0;
         }
         .logo {
-            margin: 30px 0px 20px 10px;
+            margin: 30px 8px 25px 0px;
+        }
+        .iconLink {
+            width: 28px;
+            margin: 5px 10px;
         }
     }
     
     .react-tabs__tab {
-        width: 150px;
-        margin-left: 20px;
-        padding: 7px 0;
+        width: 175px;
+        margin-left: 23px;
+        padding: 13px 0;
         &:not(:last-child) {
             border-bottom: 1px solid #333333;
         }
@@ -34,13 +39,58 @@
         &--selected {
             border-radius: 0!important; 
             border: 1px solid white;
+            background-image: url(../img/bg.png);
             /* background-color: #eeeeee!important; */
             color:  #ffb400!important;
+        }
+    }
+
+    .PhotoHome {
+        height: 100%;
+        position: absolute;
+        right: 0;
+    }
+
+    .absolute {
+        position: absolute;
+        z-index: 1;
+        top: 55%;
+        .colorWhite {
+            // color: white;
+            font-size: 45px;
+            margin-bottom: 8px !important;
+        }
+        .Im {
+            font-size: 45px;
+            display: table-cell;
+            border-top: 1px solid #ffb400;
+            margin-bottom: 10px !important;
+        }
+        .textDescriptif {
+            color: #9b9b9b;
+            border-top: 1px solid #ffb400;
+            border-bottom: 1px solid #ffb400;
+            .size {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .about {
+        position: absolute;
+        .HR {
+            height: 5px;
+            width: 75px;
+            color: #ffb400;
+            background-color: #ffb400;
+            border: 0;
+            margin: 25px 0 0 0;
         }
     }
 }
 
 body {
     font-family: "oswald" !important;
+    background-image: url(../img/bg.png);
     @include FirstShow;
 }

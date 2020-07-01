@@ -4,6 +4,7 @@
 }
 body {
   font-family: "oswald" !important;
+  background-image: url(../img/bg.png);
 }
 body .tabsHolder {
   display: flex;
@@ -17,14 +18,19 @@ body .tabsHolder {
 }
 body .tabsHolder .tabtitles {
   font-size: 14.3px;
+  margin: 0;
 }
 body .tabsHolder .logo {
-  margin: 30px 0px 20px 10px;
+  margin: 30px 8px 25px 0px;
+}
+body .tabsHolder .iconLink {
+  width: 28px;
+  margin: 5px 10px;
 }
 body .react-tabs__tab {
-  width: 150px;
-  margin-left: 20px;
-  padding: 7px 0;
+  width: 175px;
+  margin-left: 23px;
+  padding: 13px 0;
 }
 body .react-tabs__tab:not(:last-child) {
   border-bottom: 1px solid #333333;
@@ -35,8 +41,48 @@ body .react-tabs__tab:hover {
 body .react-tabs__tab--selected {
   border-radius: 0 !important;
   border: 1px solid white;
+  background-image: url(../img/bg.png);
   /* background-color: #eeeeee!important; */
   color: #ffb400 !important;
+}
+body .PhotoHome {
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+body .absolute {
+  position: absolute;
+  z-index: 1;
+  top: 55%;
+}
+body .absolute .colorWhite {
+  font-size: 45px;
+  margin-bottom: 8px !important;
+}
+body .absolute .Im {
+  font-size: 45px;
+  display: table-cell;
+  border-top: 1px solid #ffb400;
+  margin-bottom: 10px !important;
+}
+body .absolute .textDescriptif {
+  color: #9b9b9b;
+  border-top: 1px solid #ffb400;
+  border-bottom: 1px solid #ffb400;
+}
+body .absolute .textDescriptif .size {
+  font-size: 16px;
+}
+body .about {
+  position: absolute;
+}
+body .about .HR {
+  height: 5px;
+  width: 75px;
+  color: #ffb400;
+  background-color: #ffb400;
+  border: 0;
+  margin: 25px 0 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */
