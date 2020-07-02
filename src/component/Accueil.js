@@ -5,7 +5,7 @@ function Home() {
 
     return (
         <div className="PanelHome">
-            <div className="ml-5 absolute">
+            <div className="ml-5 pl-5 absolute">
                 <div className="">
                     <h1 className="colorWhite fontSize">Bonjour, je suis</h1>
                     <h1 className="Im fontSize"><b>HAKIM NEMAR</b></h1>
