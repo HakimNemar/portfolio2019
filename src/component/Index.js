@@ -3,22 +3,22 @@ import 'react-tabs/style/react-tabs.css';
 import 'materialize-css/dist/css/materialize.min.css';
 import React, { useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import LogoHN from '../img/logo.png';
-import Github from '../img/github.png';
-import Linkedin from '../img/linkedin.png';
-import Home from './Accueil';
-import About from './APropos';
-import Skills from './Competences';
-import Contact from './Contact';
-import Experience from './Experience';
-import Education from './Education';
-import Projets from './Projets';
+import LogoHN from '../assets/img/logo.png';
+import Github from '../assets/img/github.png';
+import Linkedin from '../assets/img/linkedin.png';
+import Home from './TabPanel/Accueil';
+import About from './TabPanel/APropos';
+import Skills from './TabPanel/Competences';
+import Contact from './TabPanel/Contact';
+import Experience from './TabPanel/Experience';
+import Education from './TabPanel/Education';
+import Projets from './TabPanel/Projets';
 
 function Index() {
     const [tabIndex, setTabIndex] = useState(0);
 
     return (
-        <div className="container-fluid p-0 m-0">
+        <div className="container-fluid p-0 m-0 TabPanel">
             <Tabs className="row p-0 m-0" forceRenderTabPanel={true} selectedIndex={tabIndex} onSelect={tabIndex => setTabIndex(tabIndex)}>
                 <TabList className="tabsHolder col-xs-2 m-0 p-0">
                     <img className="logo" src={LogoHN} alt="logo NomPrenom" />
