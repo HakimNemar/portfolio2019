@@ -213,6 +213,14 @@ body .input-field input[type=email]:focus {
   body .PanelProjets .projets .text .sourceSnap {
     margin-top: -27px;
   }
+  body .PanelContact {
+    margin: 30px 30px 0 30px !important;
+    padding: 0 !important;
+    width: auto;
+  }
+  body .PanelContact .sendEmail {
+    background-color: #ffb400;
+  }
 }
 @media (min-width: 602px) and (max-width: 955px) {
   body .react-tabs__tab {
@@ -387,6 +395,9 @@ body .input-field input[type=email]:focus {
     transition: ease-in-out 0.5s;
     filter: opacity(25%);
   }
+  body .PanelContact {
+    width: 676px !important;
+  }
 }
 @media (min-width: 1428px) {
   body .PanelHome .PhotoHome {
@@ -531,6 +542,9 @@ body .input-field input[type=email]:focus {
   body .PanelProjets .overlay-image:hover .image {
     transition: ease-in-out 0.5s;
     filter: opacity(25%);
+  }
+  body .PanelContact {
+    width: 700px !important;
   }
 }
 

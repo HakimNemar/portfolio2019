@@ -276,23 +276,10 @@
                 }
             }
         }
-        // .figure {
-        //     position: relative;
-        //     .nameProjet {
-        //         font-size: 64px;
-        //         position: absolute;
-        //         bottom: 43%;
-        //         right: 17%;
-        //         color: white;
-        //         font-weight: bold;
-        //     }
-        //     &Projet {
-        //         width: 400px;
-        //         height: 280px;
-        //         border-radius: 18px;
-        //     }
-        // }
         @include OverlayImage;
+    }
+    .PanelContact {
+        width: 700px !important;
     }
 }
 
@@ -318,6 +305,9 @@
             }
         }
         @include OverlayImage;
+    }
+    .PanelContact {
+        width: 676px !important;
     }
 }
 
@@ -554,6 +544,14 @@
                     margin-top: -27px;
                 }
             }
+        }
+    }
+    .PanelContact {
+        margin: 30px 30px 0 30px !important;
+        padding: 0 !important;
+        width: auto;
+        .sendEmail {
+            background-color: #ffb400;
         }
     }
 }
