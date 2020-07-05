@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import './SASS/style.css';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Home from './component/Index';
 import 'materialize-css/dist/css/materialize.min.css';
 

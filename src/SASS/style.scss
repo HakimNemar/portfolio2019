@@ -4,9 +4,18 @@
 }
 
 @mixin General {
+    .menu {
+        display: none;
+    }
+    .tabPhone {
+        display: none;
+    }
     .iconLink {
         width: 28px;
         margin: 5px 10px;
+    }
+    .projetNamePhone {
+        display: none;
     }
     .tabsHolder {
         display: flex;
@@ -98,6 +107,17 @@
             font-size: 60px !important;
         }
     }
+    .input-field input[type="text"]:focus + label,
+    .input-field textarea:focus + label,
+    .input-field input[type="email"]:focus + label {
+        color: #ffb400 !important;
+    }
+    .input-field input[type="text"]:focus,
+    .input-field textarea:focus,
+    .input-field input[type="email"]:focus {
+        border-bottom: 1px solid #ffb400 !important;
+        box-shadow: 0 1px 0 0 #ffb400 !important;
+    }
 }
 
 @mixin OverlayImage {
@@ -122,6 +142,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             width: 100%;
+            padding: 15px;
             .displayGrid {
                 display: inline-grid;
             }
@@ -324,7 +345,7 @@
     }
     .PanelAbout {
         padding: 0 !important;
-        margin: 60px 0 0 15px !important;
+        margin: 60px 0 0 35px !important;
     }
     .projets {
         display: grid;
@@ -342,8 +363,6 @@
         width: 100%;
         .image {
             display: block;
-            // width: 400px;
-            // height: 280px;
             border-radius: 18px;
             transition: ease-in-out 0.5s;
         }
@@ -435,14 +454,106 @@
 }
 
 @mixin ForPhone {
+    #Tabs {
+        display: block;
+        .iconLogo {
+            position: absolute;
+            margin: 8px !important;
+        }
+        .tabPC {
+            display: none;
+        }
+        .tabPhone {
+            display: block !important;
+        }
+        .tabsHolder {
+            height: 52px;
+            .menu {
+                display: block;
+                font-size: 30px;
+                width: -webkit-fill-available;
+            }
+            .react-tabs__tab {
+                background-color: black;
+                width: -webkit-fill-available;
+                margin-left: 0;
+                padding-left: 20px !important;
+                &--selected {
+                    background-color: white !important;
+                }
+            }
+        }
+    }
     .TabPanel {
         .logo {
             display: none;
         }
     }
     .PanelHome {
+        .absolute {
+            margin-left: 30px !important;
+            padding-left: 0 !important;
+            position: initial;
+            .bonjour {
+                margin-top: 50px;
+                // margin-left: 35px;
+            }
+            .textDescriptif {
+                margin-right: 35px;
+                margin-top: 76px;
+            }
+        }
         .PhotoHome {
-            display: none;
+            margin-left: 56px;
+            width: 70.7%;
+        }
+    }
+    .PanelAbout {
+        margin: 30px 30px 0 30px !important;
+        padding: 0 !important;
+        width: auto;
+    }
+    .PanelProjets {
+        margin: 30px 30px 0 30px !important;
+        padding: 0 !important;
+        width: auto;
+        .PROJETS {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        .projets {
+            display: grid;
+            grid-template-columns: 300px;
+            grid-gap: 15px;
+            &__img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .projetNamePhone {
+                display: block;
+                font-size: 35px;
+                margin-top: 20px;
+            }
+            .projetName {
+                display: none;
+            }
+            .text {
+                .visite {
+                    color: white;
+                    background-color: #ffb400;
+                    border: 1px solid #ffb400;
+                }
+                .codeSource {
+                    color: #ffb400;
+                    float: right;
+                    margin: 10px;
+                    text-decoration: underline;
+                }
+                .sourceSnap {
+                    margin-top: -27px;
+                }
+            }
         }
     }
 }

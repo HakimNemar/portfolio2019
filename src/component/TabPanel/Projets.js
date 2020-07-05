@@ -18,32 +18,17 @@ function Projets() {
 
     return (
         <div className="container PanelProjets m-5 pl-5">
-            <div className="mb-5 pb-5">
+            <div className="mb-5 pb-5 PROJETS">
                 <h1 className="title">PROJETS</h1>
                 <hr className="HR" />
             </div>
-            {/* <div>
-                <div className="max400">
-                    <div className="overlay-image">
-                        <img className="image" src={P4} alt="Alt text" />
-                        <div className="projetName">
-                            <div className="text">Puissance 4</div>
-                        </div>
-                        <div className="hover">
-                            <div className="text">
-                                <button className="btn btn-outline-info visite" onClick={() => window.open('https://mypuissance4.herokuapp.com/')}>
-                                    Visiter le site
-                            </button>
-                                <h6 className="codeSource" onClick={() => window.open('https://github.com/HakimNemar/Puissance4')}>code source</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
             <div>
-                <div class="projets">
-                    <span class="projets__item projets__item--1">
+                <div className="projets">
+                    <span className="projets__item projets__item--1">
                         <div className="overlay-image">
+                            <div className="projetNamePhone">
+                                <div className="text">blueprint.</div>
+                            </div>
                             <img className="image projets__img" src={BluePrint} alt="Alt text" />
                             <div>
                                 <div className="projetName">
@@ -51,6 +36,7 @@ function Projets() {
                                 </div>
                                 <div className="hover">
                                     <div className="text">
+                                        <h5>Projet phare de l'année. Dans un groupe de 8 étudiants, nous avons dû créer un site e-commerce à partir de zéro, marketing inclus.</h5>
                                         <button className="btn btn-outline-info visite" onClick={() => window.open('https://e-8commerce-client.herokuapp.com')}>
                                             Visiter le site
                                         </button>
@@ -60,8 +46,11 @@ function Projets() {
                             </div>
                         </div>
                     </span>
-                    <span class="projets__item projets__item--2">
+                    <span className="projets__item projets__item--2">
                         <div className="overlay-image">
+                            <div className="projetNamePhone">
+                                <div className="text">Snpachat</div>
+                            </div>
                             <img className="image projets__img" src={Snap} alt="Alt text" />
                             <div>
                                 <div className="projetName">
@@ -70,19 +59,23 @@ function Projets() {
                                 <div className="hover">
                                     <div className="text">
                                         <div className="displayGrid">
+                                            <h5>Recréation de Snapchat. Utilisez l'API fournie et créez une application React qui fonctionne comme Snapchat.</h5>
                                             {/* <img src={smartphone} alt="Icon Smartphone" className="smartphone" /> */}
                                             <button className="btn btn-outline-info visite" onClick={() => window.open('http://our-snapchat.surge.sh')}>
                                                 Visiter le site
-                                        </button>
+                                            </button>
                                         </div>
-                                        <h6 className="codeSource" onClick={() => window.open('https://github.com/HakimNemar/my_snapchat')}>code source</h6>
+                                        <h6 className="codeSource sourceSnap" onClick={() => window.open('https://github.com/HakimNemar/my_snapchat')}>code source</h6>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </span>
-                    <span class="projets__item projets__item--3">
+                    <span className="projets__item projets__item--3">
                         <div className="overlay-image">
+                            <div className="projetNamePhone">
+                                <div className="text">Quiz</div>
+                            </div>
                             <img className="image projets__img" src={QuizHome} alt="Alt text" />
                             <div>
                                 <div className="projetName">
@@ -90,6 +83,7 @@ function Projets() {
                                 </div>
                                 <div className="hover">
                                     <div className="text">
+                                        <h5>Création  d'un site Web de quiz que l'utilisateur peut créer et répondre avec un système de login.</h5>
                                         <button className="btn btn-outline-info visite" onClick={() => setShowQuiz(true)}>
                                             Regarder les photos
                                         </button>
@@ -99,8 +93,11 @@ function Projets() {
                             </div>
                         </div>
                     </span>
-                    <span class="projets__item projets__item--4">
+                    <span className="projets__item projets__item--4">
                         <div className="overlay-image">
+                            <div className="projetNamePhone">
+                                <div className="text">MVC_Free_Ads</div>
+                            </div>
                             <img className="image projets__img" src={FreeAdsAnnonce} style={{ height: "260px" }} alt="Alt text" />
                             <div>
                                 <div className="projetName">
@@ -108,6 +105,7 @@ function Projets() {
                                 </div>
                                 <div className="hover">
                                     <div className="text">
+                                        <h5>Création d'un site de petites annonces en utilisant le Framework Laravel.</h5>
                                         <button className="btn btn-outline-info visite" onClick={() => setShow(true)}>
                                             Regarder les photos
                                         </button>
@@ -117,8 +115,11 @@ function Projets() {
                             </div>
                         </div>
                     </span>
-                    <span class="projets__item projets__item--5">
+                    <span className="projets__item projets__item--5">
                         <div className="overlay-image">
+                            <div className="projetNamePhone">
+                                <div className="text">MVC_PiePHP</div>
+                            </div>
                             <img className="image projets__img" src={MVC} alt="Alt text" />
                             <div>
                                 <div className="projetName">
@@ -133,8 +134,11 @@ function Projets() {
                             </div>
                         </div>
                     </span>
-                    <span class="projets__item projets__item--6">
+                    <span className="projets__item projets__item--6">
                         <div className="overlay-image">
+                            <div className="projetNamePhone">
+                                <div className="text">Puissance4</div>
+                            </div>
                             <img className="image projets__img" src={P4} alt="Alt text" />
                             <div>
                                 <div className="projetName">
@@ -142,6 +146,7 @@ function Projets() {
                                 </div>
                                 <div className="hover">
                                     <div className="text">
+                                        <h5>Création d'un plugin jQuery pour un puissance 4 dynamique.</h5>
                                         <button className="btn btn-outline-info visite" onClick={() => window.open('https://mypuissance4.herokuapp.com/')}>
                                             Visiter le site
                                         </button>
@@ -151,8 +156,11 @@ function Projets() {
                             </div>
                         </div>
                     </span>
-                    <span class="projets__item projets__item--7">
+                    <span className="projets__item projets__item--7">
                         <div className="overlay-image">
+                            <div className="projetNamePhone">
+                                <div className="text">Portfolio</div>
+                            </div>
                             <img className="image projets__img" src={Portfolio} alt="Alt text" />
                             <div>
                                 <div className="projetName">

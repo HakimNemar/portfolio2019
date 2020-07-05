@@ -6,9 +6,18 @@ body {
   font-family: "oswald" !important;
   background-image: url(../assets/img/bg.png);
 }
+body .menu {
+  display: none;
+}
+body .tabPhone {
+  display: none;
+}
 body .iconLink {
   width: 28px;
   margin: 5px 10px;
+}
+body .projetNamePhone {
+  display: none;
 }
 body .tabsHolder {
   display: flex;
@@ -97,12 +106,112 @@ body .absolute .textDescriptif .size16 {
 body .absolute .fontSize {
   font-size: 60px !important;
 }
+body .input-field input[type=text]:focus + label,
+body .input-field textarea:focus + label,
+body .input-field input[type=email]:focus + label {
+  color: #ffb400 !important;
+}
+body .input-field input[type=text]:focus,
+body .input-field textarea:focus,
+body .input-field input[type=email]:focus {
+  border-bottom: 1px solid #ffb400 !important;
+  box-shadow: 0 1px 0 0 #ffb400 !important;
+}
 @media (max-width: 601px) {
+  body #Tabs {
+    display: block;
+  }
+  body #Tabs .iconLogo {
+    position: absolute;
+    margin: 8px !important;
+  }
+  body #Tabs .tabPC {
+    display: none;
+  }
+  body #Tabs .tabPhone {
+    display: block !important;
+  }
+  body #Tabs .tabsHolder {
+    height: 52px;
+  }
+  body #Tabs .tabsHolder .menu {
+    display: block;
+    font-size: 30px;
+    width: -webkit-fill-available;
+  }
+  body #Tabs .tabsHolder .react-tabs__tab {
+    background-color: black;
+    width: -webkit-fill-available;
+    margin-left: 0;
+    padding-left: 20px !important;
+  }
+  body #Tabs .tabsHolder .react-tabs__tab--selected {
+    background-color: white !important;
+  }
   body .TabPanel .logo {
     display: none;
   }
+  body .PanelHome .absolute {
+    margin-left: 30px !important;
+    padding-left: 0 !important;
+    position: initial;
+  }
+  body .PanelHome .absolute .bonjour {
+    margin-top: 50px;
+  }
+  body .PanelHome .absolute .textDescriptif {
+    margin-right: 35px;
+    margin-top: 76px;
+  }
   body .PanelHome .PhotoHome {
+    margin-left: 56px;
+    width: 70.7%;
+  }
+  body .PanelAbout {
+    margin: 30px 30px 0 30px !important;
+    padding: 0 !important;
+    width: auto;
+  }
+  body .PanelProjets {
+    margin: 30px 30px 0 30px !important;
+    padding: 0 !important;
+    width: auto;
+  }
+  body .PanelProjets .PROJETS {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  body .PanelProjets .projets {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-gap: 15px;
+  }
+  body .PanelProjets .projets__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  body .PanelProjets .projets .projetNamePhone {
+    display: block;
+    font-size: 35px;
+    margin-top: 20px;
+  }
+  body .PanelProjets .projets .projetName {
     display: none;
+  }
+  body .PanelProjets .projets .text .visite {
+    color: white;
+    background-color: #ffb400;
+    border: 1px solid #ffb400;
+  }
+  body .PanelProjets .projets .text .codeSource {
+    color: #ffb400;
+    float: right;
+    margin: 10px;
+    text-decoration: underline;
+  }
+  body .PanelProjets .projets .text .sourceSnap {
+    margin-top: -27px;
   }
 }
 @media (min-width: 602px) and (max-width: 955px) {
@@ -129,7 +238,7 @@ body .absolute .fontSize {
   }
   body .PanelAbout {
     padding: 0 !important;
-    margin: 60px 0 0 15px !important;
+    margin: 60px 0 0 35px !important;
   }
   body .projets {
     display: grid;
@@ -216,6 +325,7 @@ body .absolute .fontSize {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    padding: 15px;
   }
   body .PanelProjets .overlay-image .text .displayGrid {
     display: inline-grid;
@@ -360,6 +470,7 @@ body .absolute .fontSize {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    padding: 15px;
   }
   body .PanelProjets .overlay-image .text .displayGrid {
     display: inline-grid;
