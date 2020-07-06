@@ -1,0 +1,100 @@
+// @mixin ForTab {
+// }
+.react-tabs__tab {
+    width: 140px !important;
+    margin-left: 0;
+    padding-left: 15px !important;
+}
+.logo {
+    margin: 40px 0 !important;
+}
+
+.PanelHome {
+    margin-left: 18px;
+    .absolute {
+        margin: 0 20px 0 20px !important;
+        padding-left: 0 !important;
+        top: 8% !important;
+    }
+    .PhotoHome {
+        margin: 3% 0 0 5%;
+        padding-top: 100%;
+        width: 468.2px;
+    }
+}
+
+.PanelProjets {
+    padding: 0 !important;
+    .PROJETS {
+        padding-left: 42px;
+    }
+    .projets {
+        display: grid;
+        grid-template-columns: 300px;
+        grid-gap: 15px;
+        &__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.overlay-image {
+    display: flex;
+    position: relative;
+    width: 100%;
+    .image {
+        display: block;
+        border-radius: 18px;
+        transition: ease-in-out 0.5s;
+    }
+    .projetName {
+        font-size: 50px;
+    }
+    .visite {
+        font-size: 25px;
+        height: auto;
+        color: #ffb400;
+        text-transform: capitalize;
+        border: 2px solid #ffb400;
+        border-radius: 32px !important;
+        width: 210px;
+        &:focus {
+            box-shadow: none;
+            outline: none !important;
+            outline-offset: none !important;
+            background-color: initial;
+        }
+    }
+    .text {
+        text-align: center;
+        .codeSource {
+            text-decoration: underline;
+            color: #ffb400;
+            font-size: large;
+        }
+    }
+}
+
+.PanelSkills {
+    max-width: fit-content;
+    .textSkills {
+        font-size: 20px;
+        width: 410px;
+    }
+    .mySkills {
+        display: flex;
+        justify-content: space-between;
+        .competence {
+            display: none;
+        }
+    }
+    .styleDev {
+        margin-top: 30px;
+    }
+    .skillsPreference {
+        display: flex;
+        justify-content: space-around;
+    }
+}

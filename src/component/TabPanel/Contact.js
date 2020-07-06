@@ -17,6 +17,7 @@ function Contact() {
         }
         // setForm(e.target);
         // setIsReady(true);
+        console.log("submited")
     }
     
     useEffect(() => {
