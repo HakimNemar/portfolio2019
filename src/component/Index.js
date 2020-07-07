@@ -1,6 +1,6 @@
-import 'react-materialize';
+// import 'react-materialize';
+// import 'materialize-css/dist/css/materialize.min.css';
 import 'react-tabs/style/react-tabs.css';
-import 'materialize-css/dist/css/materialize.min.css';
 import React, { useState, useEffect } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import LogoHN from '../assets/img/logo.png';
@@ -14,6 +14,7 @@ import Experience from './TabPanel/Experience';
 import Education from './TabPanel/Education';
 import Projets from './TabPanel/Projets';
 import $ from 'jquery';
+import pdf from '../assets/pdf/Nemar_Hakim.pdf';
 
 function Index() {
     const [tabIndex, setTabIndex] = useState(0);
@@ -50,6 +51,9 @@ function Index() {
                     <Tab className="tabPC react-tabs__tab"><h6 className="tabtitles">EDUCATION</h6></Tab>
                     <Tab className="tabPC react-tabs__tab"><h6 className="tabtitles">PROJETS</h6></Tab>
                     <Tab className="tabPC react-tabs__tab"><h6 className="tabtitles">CONTACT</h6></Tab>
+                    <li className="mt-5 CVPDF">
+                        <h6><a href={pdf} className="CV" target="_blank" rel="noopener noreferrer">CURRICULUM VITAE <i className="material-icons icon">save_alt</i></a></h6>
+                    </li>
                     <li className="row mt-5 iconLogo">
                         <img className="iconLink" src={Github} alt="GitHub" title="GitHub" onClick={() => window.open('https://github.com/HakimNemar')} />
                         <img className="iconLink" src={Linkedin} alt="Linkedin" title="Linkedin" onClick={() => window.open('https://www.linkedin.com/in/hakim-nemar')} />

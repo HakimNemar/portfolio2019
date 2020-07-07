@@ -1,5 +1,12 @@
 // @mixin ForTab {
 // }
+@media (min-width: 602px) and (max-width: 690px) {
+    .PanelSkills {
+        margin-right: 0 !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+}
 .react-tabs__tab {
     width: 140px !important;
     margin-left: 0;
@@ -96,5 +103,25 @@
     .skillsPreference {
         display: flex;
         justify-content: space-around;
+    }
+}
+
+.CVPDF {
+    width: 140px !important;
+    margin-left: 0;
+    padding-left: 15px !important;
+    h6 {
+        font-size: 19px;
+        .CV {
+            text-decoration: none;
+            color: white;
+            &:hover {
+                color: #ffb400;
+            }
+        }
+        .icon {
+            position: relative;
+            top: 3px !important;
+        }
     }
 }

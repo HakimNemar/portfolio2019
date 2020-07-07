@@ -1,11 +1,15 @@
 import React from 'react';
 import Me from '../../assets/img/myPictures/me.png';
+import pdf from '../../assets/pdf/Nemar_Hakim.pdf';
 
 function Home() {
 
     return (
         <div className="PanelHome">
             <div className="ml-5 pl-5 absolute">
+                <div className="CVPhone">
+                    <h6><a href={pdf} className="CV" target="_blank" rel="noopener noreferrer">CV <i className="material-icons icon">save_alt</i></a></h6>
+                </div>
                 <div className="bonjour">
                     <h1 className="colorWhite fontSize">Bonjour, je suis</h1>
                     <h1 className="Im fontSize"><b>HAKIM NEMAR</b></h1>

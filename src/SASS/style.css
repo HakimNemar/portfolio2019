@@ -133,6 +133,31 @@ body .sendEmail:focus {
 body .logoSkills {
   width: 50px;
 }
+body .gray {
+  color: #545454;
+  margin-bottom: 0;
+}
+body .CVPDF {
+  width: 175px;
+  margin-left: 23px;
+}
+body .CVPDF h6 {
+  font-size: 19px;
+}
+body .CVPDF h6 .CV {
+  text-decoration: none;
+  color: white;
+}
+body .CVPDF h6 .CV:hover {
+  color: #ffb400;
+}
+body .CVPDF h6 .icon {
+  position: relative;
+  top: 3px !important;
+}
+body .CVPhone {
+  display: none;
+}
 @media (max-width: 601px) {
   body #Tabs {
     display: block;
@@ -173,11 +198,11 @@ body .logoSkills {
     position: initial;
   }
   body .PanelHome .absolute .bonjour {
-    margin-top: 50px;
+    margin-top: 22px;
   }
   body .PanelHome .absolute .textDescriptif {
     margin-right: 35px;
-    margin-top: 76px;
+    margin-top: 70px;
   }
   body .PanelHome .PhotoHome {
     margin-left: 56px;
@@ -252,6 +277,9 @@ body .logoSkills {
     display: flex;
     justify-content: space-between;
   }
+  body .PanelSkills .skillsPreference {
+    align-items: flex-end;
+  }
   body .PanelSkills .divLanguage {
     place-self: flex-end;
     align-self: flex-end;
@@ -259,6 +287,7 @@ body .logoSkills {
   }
   body .PanelSkills .divLanguage .logoSkills {
     width: 20px;
+    height: 20px;
   }
   body .PanelSkills .displayBlock {
     display: block;
@@ -271,6 +300,99 @@ body .logoSkills {
     display: flex;
     justify-content: space-around !important;
   }
+  body .PanelExperience {
+    margin: 30px 30px 0 30px !important;
+    padding: 0 !important;
+    width: auto;
+  }
+  body .PanelExperience .divExperience {
+    border-top: 1px solid #dfdfdf;
+    padding: 20px 0;
+  }
+  body .PanelExperience .divExperience:last-child {
+    border-bottom: 1px solid #dfdfdf;
+  }
+  body .PanelExperience .divExperience .divTitleExperience {
+    display: flex;
+    color: #545454;
+    justify-content: space-between;
+  }
+  body .PanelExperience .divExperience .titleExperience {
+    margin-bottom: 20px;
+  }
+  body .PanelExperience .divExperience .img_Text {
+    text-align: center;
+    font-family: sans-serif;
+  }
+  body .PanelExperience .divExperience .img_Text .imageExperience {
+    width: 160px;
+    height: 70px;
+    margin-bottom: 20px;
+  }
+  body .PanelExperience .divExperience .img_Text .textExp {
+    text-align: left;
+    margin: 0 !important;
+  }
+  body .PanelEducation {
+    margin: 30px 30px 0 30px !important;
+    padding: 0 !important;
+    width: auto;
+  }
+  body .PanelEducation .divEducation {
+    border-top: 1px solid #dfdfdf;
+    padding: 20px 0;
+  }
+  body .PanelEducation .divEducation:last-child {
+    border-bottom: 1px solid #dfdfdf;
+  }
+  body .PanelEducation .divEducation .divTitleEducation {
+    display: flex;
+    color: #545454;
+    justify-content: space-between;
+  }
+  body .PanelEducation .divEducation .titleEducation {
+    margin-bottom: 20px;
+  }
+  body .PanelEducation .divEducation .img_Text {
+    text-align: center;
+    font-family: sans-serif;
+  }
+  body .PanelEducation .divEducation .img_Text .imageEducation {
+    width: 160px;
+    height: 70px;
+    margin-bottom: 20px;
+  }
+  body .PanelEducation .divEducation .img_Text .textEdu {
+    text-align: left;
+    margin: 0 !important;
+  }
+  body .CVPDF {
+    display: none;
+  }
+  body .CVPhone {
+    display: block;
+    text-align: end;
+  }
+  body .CVPhone h6 {
+    font-size: 22px;
+  }
+  body .CVPhone h6 .CV {
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 10px;
+  }
+  body .CVPhone h6 .icon {
+    position: relative;
+    top: 3px !important;
+  }
+}
+@media (min-width: 602px) and (max-width: 955px) and (min-width: 602px) and (max-width: 690px) {
+  body .PanelSkills {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
 }
 @media (min-width: 602px) and (max-width: 955px) {
   body .react-tabs__tab {
@@ -278,9 +400,13 @@ body .logoSkills {
     margin-left: 0;
     padding-left: 15px !important;
   }
+}
+@media (min-width: 602px) and (max-width: 955px) {
   body .logo {
     margin: 40px 0 !important;
   }
+}
+@media (min-width: 602px) and (max-width: 955px) {
   body .PanelHome {
     margin-left: 18px;
   }
@@ -294,6 +420,8 @@ body .logoSkills {
     padding-top: 100%;
     width: 468.2px;
   }
+}
+@media (min-width: 602px) and (max-width: 955px) {
   body .PanelProjets {
     padding: 0 !important;
   }
@@ -310,6 +438,8 @@ body .logoSkills {
     height: 100%;
     object-fit: cover;
   }
+}
+@media (min-width: 602px) and (max-width: 955px) {
   body .overlay-image {
     display: flex;
     position: relative;
@@ -346,6 +476,8 @@ body .logoSkills {
     color: #ffb400;
     font-size: large;
   }
+}
+@media (min-width: 602px) and (max-width: 955px) {
   body .PanelSkills {
     max-width: fit-content;
   }
@@ -366,6 +498,27 @@ body .logoSkills {
   body .PanelSkills .skillsPreference {
     display: flex;
     justify-content: space-around;
+  }
+}
+@media (min-width: 602px) and (max-width: 955px) {
+  body .CVPDF {
+    width: 140px !important;
+    margin-left: 0;
+    padding-left: 15px !important;
+  }
+  body .CVPDF h6 {
+    font-size: 19px;
+  }
+  body .CVPDF h6 .CV {
+    text-decoration: none;
+    color: white;
+  }
+  body .CVPDF h6 .CV:hover {
+    color: #ffb400;
+  }
+  body .CVPDF h6 .icon {
+    position: relative;
+    top: 3px !important;
   }
 }
 @media (min-width: 956px) and (max-width: 1428px) {
@@ -494,6 +647,60 @@ body .logoSkills {
   }
   body .PanelSkills .divLanguage .titleLanguage {
     margin: auto 0;
+  }
+  body .PanelEducation {
+    max-width: 74vw;
+    position: fixed;
+    padding-right: 3rem;
+  }
+  body .PanelEducation .divEducation {
+    border-top: 1px solid #dfdfdf;
+    padding: 20px 0;
+  }
+  body .PanelEducation .divEducation:last-child {
+    border-bottom: 1px solid #dfdfdf;
+  }
+  body .PanelEducation .divEducation .divTitleEducation {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .PanelEducation .divEducation .titleEducation {
+    margin-bottom: 20px;
+  }
+  body .PanelEducation .divEducation .img_Text {
+    display: flex;
+    font-family: sans-serif;
+  }
+  body .PanelEducation .divEducation .img_Text .imageEducation {
+    width: 200px;
+    height: 100px;
+  }
+  body .PanelExperience {
+    max-width: 74vw;
+    position: fixed;
+    padding-right: 3rem;
+  }
+  body .PanelExperience .divExperience {
+    border-top: 1px solid #dfdfdf;
+    padding: 20px 0;
+  }
+  body .PanelExperience .divExperience:last-child {
+    border-bottom: 1px solid #dfdfdf;
+  }
+  body .PanelExperience .divExperience .divTitleExperience {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .PanelExperience .divExperience .titleExperience {
+    margin-bottom: 20px;
+  }
+  body .PanelExperience .divExperience .img_Text {
+    display: flex;
+    font-family: sans-serif;
+  }
+  body .PanelExperience .divExperience .img_Text .imageExperience {
+    width: 200px;
+    height: 100px;
   }
 }
 @media (min-width: 1428px) {
@@ -651,9 +858,15 @@ body .logoSkills {
     margin-top: 30px;
   }
   body .PanelSkills .mySkills {
-    margin-top: 50px;
     display: flex;
     justify-content: space-between;
+  }
+  body .PanelSkills .mySkills .displayBlock {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .PanelSkills .styleDev {
+    margin-top: 50px;
   }
   body .PanelSkills .skillsPreference {
     display: flex;
@@ -665,6 +878,50 @@ body .logoSkills {
   }
   body .PanelSkills .divLanguage .titleLanguage {
     margin: auto 0;
+  }
+  body .PanelEducation .divEducation {
+    border-top: 1px solid #dfdfdf;
+    padding: 20px 0;
+  }
+  body .PanelEducation .divEducation:last-child {
+    border-bottom: 1px solid #dfdfdf;
+  }
+  body .PanelEducation .divEducation .divTitleEducation {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .PanelEducation .divEducation .titleEducation {
+    margin-bottom: 20px;
+  }
+  body .PanelEducation .divEducation .img_Text {
+    display: flex;
+    font-family: sans-serif;
+  }
+  body .PanelEducation .divEducation .img_Text .imageEducation {
+    width: 200px;
+    height: 100px;
+  }
+  body .PanelExperience .divExperience {
+    border-top: 1px solid #dfdfdf;
+    padding: 20px 0;
+  }
+  body .PanelExperience .divExperience:last-child {
+    border-bottom: 1px solid #dfdfdf;
+  }
+  body .PanelExperience .divExperience .divTitleExperience {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .PanelExperience .divExperience .titleExperience {
+    margin-bottom: 20px;
+  }
+  body .PanelExperience .divExperience .img_Text {
+    display: flex;
+    font-family: sans-serif;
+  }
+  body .PanelExperience .divExperience .img_Text .imageExperience {
+    width: 200px;
+    height: 100px;
   }
 }
 

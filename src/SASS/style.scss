@@ -134,6 +134,31 @@
     .logoSkills {
         width: 50px;
     }
+    .gray {
+        color: #545454;
+        margin-bottom: 0;
+    }
+    .CVPDF {
+        width: 175px;
+        margin-left: 23px;
+        h6 {
+            font-size: 19px;
+            .CV {
+                text-decoration: none;
+                color: white;
+                &:hover {
+                    color: #ffb400;
+                }
+            }
+            .icon {
+                position: relative;
+                top: 3px !important;
+            }
+        }
+    }
+    .CVPhone {
+        display: none;
+    }
 }
 
 @mixin OverlayImage {
@@ -229,15 +254,15 @@ body {
     @include General;
 
     @media (max-width: 601px) {
-        @import './media/ForPhone.scss';
+        @import "./media/ForPhone.scss";
     }
     @media (min-width: 602px) and (max-width: 955px) {
-        @import './media/ForTab.scss';
+        @import "./media/ForTab.scss";
     }
     @media (min-width: 956px) and (max-width: 1428px) {
-        @import './media/ForPC.scss';
+        @import "./media/ForPC.scss";
     }
     @media (min-width: 1428px) {
-        @import './media/FullScrean.scss';
+        @import "./media/FullScrean.scss";
     }
 }

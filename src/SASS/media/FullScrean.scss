@@ -10,6 +10,7 @@
         top: -30px;
     }
 }
+
 .PanelAbout {
     .PhotoAbout {
         display: block;
@@ -19,9 +20,11 @@
         top: 0;
     }
 }
+
 .widhtModal {
     max-width: 530px !important;
 }
+
 .PanelProjets {
     .carousel {
         height: 90%;
@@ -71,9 +74,11 @@
     }
     @include OverlayImage;
 }
+
 .PanelContact {
     width: 700px !important;
 }
+
 .PanelSkills {
     margin-bottom: 0 !important;
     .textSkills {
@@ -81,9 +86,15 @@
         margin-top: 30px;
     }
     .mySkills {
-        margin-top: 50px;
         display: flex;
         justify-content: space-between;
+        .displayBlock {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .styleDev {
+        margin-top: 50px;
     }
     .skillsPreference {
         display: flex;
@@ -94,6 +105,56 @@
         margin: 20px;
         .titleLanguage {
             margin: auto 0;
+        }
+    }
+}
+
+.PanelEducation {
+    .divEducation {
+        border-top: 1px solid #dfdfdf;
+        padding: 20px 0;
+        &:last-child {
+            border-bottom: 1px solid #dfdfdf;
+        }
+        .divTitleEducation {
+            display: flex;
+            justify-content: space-between;
+        }
+        .titleEducation {
+            margin-bottom: 20px;
+        }
+        .img_Text {
+            display: flex;
+            font-family: sans-serif;
+            .imageEducation {
+                width: 200px;
+                height: 100px;
+            }
+        }
+    }
+}
+
+.PanelExperience {
+    .divExperience {
+        border-top: 1px solid #dfdfdf;
+        padding: 20px 0;
+        &:last-child {
+            border-bottom: 1px solid #dfdfdf;
+        }
+        .divTitleExperience {
+            display: flex;
+            justify-content: space-between;
+        }
+        .titleExperience {
+            margin-bottom: 20px;
+        }
+        .img_Text {
+            display: flex;
+            font-family: sans-serif;
+            .imageExperience {
+                width: 200px;
+                height: 100px;
+            }
         }
     }
 }

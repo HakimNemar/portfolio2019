@@ -50,3 +50,59 @@
         }
     }
 }
+
+.PanelEducation {
+    max-width: 74vw;
+    position: fixed;
+    padding-right: 3rem;
+    .divEducation {
+        border-top: 1px solid #dfdfdf;
+        padding: 20px 0;
+        &:last-child {
+            border-bottom: 1px solid #dfdfdf;
+        }
+        .divTitleEducation {
+            display: flex;
+            justify-content: space-between;
+        }
+        .titleEducation {
+            margin-bottom: 20px;
+        }
+        .img_Text {
+            display: flex;
+            font-family: sans-serif;
+            .imageEducation {
+                width: 200px;
+                height: 100px;
+            }
+        }
+    }
+}
+
+.PanelExperience {
+    max-width: 74vw;
+    position: fixed;
+    padding-right: 3rem;
+    .divExperience {
+        border-top: 1px solid #dfdfdf;
+        padding: 20px 0;
+        &:last-child {
+            border-bottom: 1px solid #dfdfdf;
+        }
+        .divTitleExperience {
+            display: flex;
+            justify-content: space-between;
+        }
+        .titleExperience {
+            margin-bottom: 20px;
+        }
+        .img_Text {
+            display: flex;
+            font-family: sans-serif;
+            .imageExperience {
+                width: 200px;
+                height: 100px;
+            }
+        }
+    }
+}

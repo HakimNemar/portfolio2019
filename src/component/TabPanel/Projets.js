@@ -29,7 +29,7 @@ function Projets() {
                             <div className="projetNamePhone">
                                 <div className="text">blueprint.</div>
                             </div>
-                            <img className="image projets__img" src={BluePrint} alt="Alt text" />
+                            <img className="image projets__img" src={BluePrint} alt="Projet blueprint" />
                             <div>
                                 <div className="projetName">
                                     <div className="text">blueprint.</div>
@@ -51,7 +51,7 @@ function Projets() {
                             <div className="projetNamePhone">
                                 <div className="text">Snpachat</div>
                             </div>
-                            <img className="image projets__img" src={Snap} alt="Alt text" />
+                            <img className="image projets__img" src={Snap} alt="Projet Snpachat" />
                             <div>
                                 <div className="projetName">
                                     <div className="text">Snpachat</div>
@@ -76,7 +76,7 @@ function Projets() {
                             <div className="projetNamePhone">
                                 <div className="text">Quiz</div>
                             </div>
-                            <img className="image projets__img" src={QuizHome} alt="Alt text" />
+                            <img className="image projets__img" src={QuizHome} alt="Projet Quiz" />
                             <div>
                                 <div className="projetName">
                                     <div className="text">Quiz</div>
@@ -98,7 +98,7 @@ function Projets() {
                             <div className="projetNamePhone">
                                 <div className="text">MVC_Free_Ads</div>
                             </div>
-                            <img className="image projets__img" src={FreeAdsAnnonce} style={{ height: "260px" }} alt="Alt text" />
+                            <img className="image projets__img" src={FreeAdsAnnonce} style={{ height: "260px" }} alt="Projet MVC_Free_Ads" />
                             <div>
                                 <div className="projetName">
                                     <div className="text">MVC_Free_Ads</div>
@@ -120,7 +120,7 @@ function Projets() {
                             <div className="projetNamePhone">
                                 <div className="text">MVC_PiePHP</div>
                             </div>
-                            <img className="image projets__img" src={MVC} alt="Alt text" />
+                            <img className="image projets__img" src={MVC} alt="Projet MVC_PiePHP" />
                             <div>
                                 <div className="projetName">
                                     <div className="text">MVC_PiePHP</div>
@@ -139,7 +139,7 @@ function Projets() {
                             <div className="projetNamePhone">
                                 <div className="text">Puissance4</div>
                             </div>
-                            <img className="image projets__img" src={P4} alt="Alt text" />
+                            <img className="image projets__img" src={P4} alt="Projet Puissance4" />
                             <div>
                                 <div className="projetName">
                                     <div className="text">Puissance4</div>
@@ -161,7 +161,7 @@ function Projets() {
                             <div className="projetNamePhone">
                                 <div className="text">Portfolio</div>
                             </div>
-                            <img className="image projets__img" src={Portfolio} alt="Alt text" />
+                            <img className="image projets__img" src={Portfolio} alt="Projet Portfolio" />
                             <div>
                                 <div className="projetName">
                                     <div className="text">Portfolio</div>

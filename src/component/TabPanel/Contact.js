@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
+import $ from 'jquery';
 
 function Contact() {
     const [name, setName] = useState("");
@@ -7,50 +8,73 @@ function Contact() {
     const [message, setMessage] = useState("");
     const [isReady, setIsReady] = useState(false);
     const [form, setForm] = useState("");
+    const [isInvalid, setIsInvalid] = useState(false);
 
     function sendEmail(e) {
         e.preventDefault();
         let invalids = {};
 
-        if (name == "") {
-            
+        if (name === "" || name === null) {
+            invalids.name = "Veuillez entrez votre nom";
         }
-        // setForm(e.target);
-        // setIsReady(true);
-        console.log("submited")
+        if (email === "" || email === null) {
+            invalids.email = "Veuillez entrez votre email";
+        }
+        if (message === "" || message === null) {
+            invalids.message = "Veuillez entrez un message";
+        }
+
+        if (Object.keys(invalids).length === 0) {
+            setIsInvalid(invalids);
+            setForm(e.target);
+            setIsReady(true);
+        } else {
+            setIsInvalid(invalids);
+        }
     }
     
     useEffect(() => {
         if (isReady) {
             setIsReady(false);
-                emailjs.sendForm('gmail', 'template_kuMy2OpZ', form, 'user_5VwJPxWIJ4W9EYRUBTIdl').then((result) => {
-                    console.log('good', result.text);
-                }, (error) => {
-                    console.log('bad', error.text);
-                });
+            emailjs.sendForm('gmail', 'template_kuMy2OpZ', form, 'user_5VwJPxWIJ4W9EYRUBTIdl').then((result) => {
+                $("#name").val("");
+                $("#email").val("");
+                $("#message").val("");
+                setName("");
+                setEmail("");
+                setMessage("");
+                setForm("");
+                console.log('good', result.text);
+            }, (error) => {
+                console.log('bad', error.text);
+            });
         }
-    }, [isReady]);
+    }, [isReady, form]);
 
     return (
         <>
             <div className="container PanelContact m-5 pl-5">
                 <h1 className="title">CONTACT</h1>
                 <hr className="HR" />
+                <h2 className="mt-5">Écrivez-moi directement !</h2>
                 <div>
                     <form onSubmit={sendEmail}>
                         <div className="my-5">
                             <div className="input-field ">
-                                <input id="password" type="text" className="validate" name="name"  onChange={(e) => setName(e.target.value)}/>
+                                <input id="name" type="text" className={"validate " + (isInvalid.name && "invalid is-invalid")} name="name" onChange={(e) => setName(e.target.value)} />
                                 <label htmlFor="name">Nom</label>
+                                <div className="invalid-feedback">{isInvalid.name}</div>
                             </div>
                             <div className="input-field">
-                                <input id="email" type="email" className="validate" name="email" onChange={(e) => setEmail(e.target.value)}/>
+                                <input id="email" type="email" className={"validate " + (isInvalid.email && "invalid is-invalid")} name="email" onChange={(e) => setEmail(e.target.value)} />
                                 <label htmlFor="email">Email</label>
+                                <div className="invalid-feedback">{isInvalid.email}</div>
                             </div>
                             <div>
                                 <div className="input-field">
-                                    <textarea id="textarea1" type="text" className="materialize-textarea validate" name="message" onChange={(e) => setMessage(e.target.value)}/>
+                                    <textarea id="message" type="text" className={"materialize-textarea validate " + (isInvalid.message && "invalid is-invalid")} name="message" onChange={(e) => setMessage(e.target.value)} />
                                     <label htmlFor="message">Message</label>
+                                    <div className="invalid-feedback">{isInvalid.message}</div>
                                 </div>
                             </div>
                         </div>
