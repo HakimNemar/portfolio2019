@@ -16,6 +16,9 @@ body .iconLink {
   width: 28px;
   margin: 5px 10px;
 }
+body .iconLink:hover {
+  cursor: pointer;
+}
 body .projetNamePhone {
   display: none;
 }
@@ -65,6 +68,9 @@ body .HR {
   background-color: #ffb400;
   border: 0;
   margin: 25px 0 0 0;
+}
+body .separationProjets {
+  display: none;
 }
 body .aboutMe ul li {
   color: #545454;
@@ -254,6 +260,10 @@ body .CVPhone {
   body .PanelProjets .projets .text .sourceSnap {
     margin-top: -27px;
   }
+  body .PanelProjets .projets .overlay-image:last-child {
+    border-bottom: 1px solid #dfdfdf;
+    padding-bottom: 30px;
+  }
   body .PanelContact {
     margin: 30px 30px 0 30px !important;
     padding: 0 !important;
@@ -395,6 +405,16 @@ body .CVPhone {
   }
 }
 @media (min-width: 602px) and (max-width: 955px) {
+  body .react-tabs__tab-panel--selected {
+    min-width: 420px !important;
+  }
+}
+@media (min-width: 602px) and (max-width: 955px) {
+  body .tabtitles {
+    font-size: 18px !important;
+  }
+}
+@media (min-width: 602px) and (max-width: 955px) {
   body .react-tabs__tab {
     width: 140px !important;
     margin-left: 0;
@@ -438,43 +458,45 @@ body .CVPhone {
     height: 100%;
     object-fit: cover;
   }
-}
-@media (min-width: 602px) and (max-width: 955px) {
-  body .overlay-image {
+  body .PanelProjets .separationProjets {
+    display: block;
+    height: 1px;
+    width: 535px;
+    color: #9b9b9b;
+    background-color: #9b9b9b;
+    border: 0;
+  }
+  body .PanelProjets .overlay-image {
     display: flex;
     position: relative;
     width: 100%;
   }
-  body .overlay-image .image {
-    display: block;
-    border-radius: 18px;
-    transition: ease-in-out 0.5s;
-  }
-  body .overlay-image .projetName {
+  body .PanelProjets .overlay-image .projetName {
     font-size: 50px;
+    margin-top: -18px;
   }
-  body .overlay-image .visite {
+  body .PanelProjets .overlay-image .visite {
     font-size: 25px;
     height: auto;
-    color: #ffb400;
+    color: white;
+    background-color: #ffb400;
     text-transform: capitalize;
     border: 2px solid #ffb400;
-    border-radius: 32px !important;
     width: 210px;
   }
-  body .overlay-image .visite:focus {
+  body .PanelProjets .overlay-image .visite:focus {
     box-shadow: none;
     outline: none !important;
     outline-offset: none !important;
     background-color: initial;
   }
-  body .overlay-image .text {
-    text-align: center;
+  body .PanelProjets .overlay-image .text {
+    padding-left: 10px;
   }
-  body .overlay-image .text .codeSource {
+  body .PanelProjets .overlay-image .text .codeSource {
     text-decoration: underline;
     color: #ffb400;
-    font-size: large;
+    font-size: 20px;
   }
 }
 @media (min-width: 602px) and (max-width: 955px) {
@@ -521,7 +543,73 @@ body .CVPhone {
     top: 3px !important;
   }
 }
+@media (min-width: 602px) and (max-width: 955px) {
+  body .PanelContact .labelContact {
+    font-size: 20px;
+  }
+}
+@media (min-width: 602px) and (max-width: 955px) {
+  body .PanelExperience {
+    max-width: 74vw;
+    position: fixed;
+    padding-right: 3rem;
+  }
+  body .PanelExperience .divExperience {
+    border-top: 1px solid #dfdfdf;
+    padding: 20px 0;
+  }
+  body .PanelExperience .divExperience:last-child {
+    border-bottom: 1px solid #dfdfdf;
+  }
+  body .PanelExperience .divExperience .divTitleExperience {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .PanelExperience .divExperience .titleExperience {
+    margin-bottom: 20px;
+  }
+  body .PanelExperience .divExperience .img_Text {
+    display: flex;
+    font-family: sans-serif;
+  }
+  body .PanelExperience .divExperience .img_Text .imageExperience {
+    width: 200px;
+    height: 100px;
+  }
+}
+@media (min-width: 602px) and (max-width: 955px) {
+  body .PanelEducation {
+    max-width: 74vw;
+    position: fixed;
+    padding-right: 3rem;
+  }
+  body .PanelEducation .divEducation {
+    border-top: 1px solid #dfdfdf;
+    padding: 20px 0;
+  }
+  body .PanelEducation .divEducation:last-child {
+    border-bottom: 1px solid #dfdfdf;
+  }
+  body .PanelEducation .divEducation .divTitleEducation {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .PanelEducation .divEducation .titleEducation {
+    margin-bottom: 20px;
+  }
+  body .PanelEducation .divEducation .img_Text {
+    display: flex;
+    font-family: sans-serif;
+  }
+  body .PanelEducation .divEducation .img_Text .imageEducation {
+    width: 200px;
+    height: 100px;
+  }
+}
 @media (min-width: 956px) and (max-width: 1428px) {
+  body .react-tabs__tab-panel--selected {
+    min-width: 700px !important;
+  }
   body .PanelHome .PhotoHome {
     height: 812px;
     width: 755px;
@@ -704,6 +792,9 @@ body .CVPhone {
   }
 }
 @media (min-width: 1428px) {
+  body .react-tabs__tab-panel--selected {
+    min-width: 800px !important;
+  }
   body .PanelHome .PhotoHome {
     height: 1090px;
     width: 1010px;
@@ -717,6 +808,10 @@ body .CVPhone {
     position: fixed !important;
     right: 0;
     top: 0;
+  }
+  body .PanelAbout .auDessus {
+    position: relative;
+    z-index: 1;
   }
   body .widhtModal {
     max-width: 530px !important;

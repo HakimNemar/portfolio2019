@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import emailjs from 'emailjs-com';
 import $ from 'jquery';
+import emailjs from 'emailjs-com';
+import React, { useState, useEffect } from 'react';
 
 function Contact() {
+    const [form, setForm] = useState("");
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const [isReady, setIsReady] = useState(false);
-    const [form, setForm] = useState("");
     const [isInvalid, setIsInvalid] = useState(false);
 
     function sendEmail(e) {
@@ -32,7 +32,7 @@ function Contact() {
             setIsInvalid(invalids);
         }
     }
-    
+
     useEffect(() => {
         if (isReady) {
             setIsReady(false);
@@ -62,18 +62,18 @@ function Contact() {
                         <div className="my-5">
                             <div className="input-field ">
                                 <input id="name" type="text" className={"validate " + (isInvalid.name && "invalid is-invalid")} name="name" onChange={(e) => setName(e.target.value)} />
-                                <label htmlFor="name">Nom</label>
+                                <label htmlFor="name" className="labelContact">Nom</label>
                                 <div className="invalid-feedback">{isInvalid.name}</div>
                             </div>
                             <div className="input-field">
                                 <input id="email" type="email" className={"validate " + (isInvalid.email && "invalid is-invalid")} name="email" onChange={(e) => setEmail(e.target.value)} />
-                                <label htmlFor="email">Email</label>
+                                <label htmlFor="email" className="labelContact">Email</label>
                                 <div className="invalid-feedback">{isInvalid.email}</div>
                             </div>
                             <div>
                                 <div className="input-field">
                                     <textarea id="message" type="text" className={"materialize-textarea validate " + (isInvalid.message && "invalid is-invalid")} name="message" onChange={(e) => setMessage(e.target.value)} />
-                                    <label htmlFor="message">Message</label>
+                                    <label htmlFor="message" className="labelContact">Message</label>
                                     <div className="invalid-feedback">{isInvalid.message}</div>
                                 </div>
                             </div>

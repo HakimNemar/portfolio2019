@@ -2,20 +2,20 @@ import React from 'react';
 import JS from '../../assets/img/language_logo/js2.png';
 import Php from '../../assets/img/language_logo/php.png';
 import Css from '../../assets/img/language_logo/css3.png';
+import Sass from '../../assets/img/language_logo/sass.png';
 import Html from '../../assets/img/language_logo/html5.png';
 import Mysql from '../../assets/img/language_logo/mysql.png';
 import Jquery from '../../assets/img/language_logo/jquery.png';
 import NodeJs from '../../assets/img/language_logo/nodejs.png';
+import GitHub from '../../assets/img/language_logo/github.png';
+import GitLab from '../../assets/img/language_logo/gitlab.png';
 import ReactJs from '../../assets/img/language_logo/react.png';
 import Laravel from '../../assets/img/language_logo/laravel.png';
 import Symfony from '../../assets/img/language_logo/symfony.png';
 import MongoDB from '../../assets/img/language_logo/mongodb.png';
 import Socketio from '../../assets/img/language_logo/socketio.png';
 import ExpressJs from '../../assets/img/language_logo/expressjs.png';
-import GitHub from '../../assets/img/language_logo/github.png';
-import GitLab from '../../assets/img/language_logo/gitlab.png';
 import Bootstrap from '../../assets/img/language_logo/bootstrap.png';
-import Sass from '../../assets/img/language_logo/sass.png';
 
 function Skills() {
 

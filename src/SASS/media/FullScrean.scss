@@ -1,5 +1,8 @@
 // @mixin FullScrean {
 // }
+.react-tabs__tab-panel--selected {
+    min-width: 800px !important;
+}
 
 .PanelHome {
     .PhotoHome {
@@ -18,6 +21,10 @@
         position: fixed !important;
         right: 0;
         top: 0;
+    }
+    .auDessus {
+        position: relative;
+        z-index: 1;
     }
 }
 

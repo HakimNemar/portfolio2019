@@ -24,7 +24,7 @@ function Education() {
                                     Samsung Campus - &#123;Epitceh&#125; à Saint-Ouen
                                 <br />
                                 Pédagogie d’apprentissage autonome par projets (individuel et en groupe)
-                            </p>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -39,7 +39,7 @@ function Education() {
                                 <h5>Certificat de Qualification Professionnelle Agent de Sûreté Aéroportuaire</h5>
                                 <p>
                                     Contrôle d’accès des personnes (passagers, membres d’équipage, personnel aéroportuaire), le cas échéant, de leurs bagages, et de la surveillance des véhicules.
-                            </p>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -56,7 +56,7 @@ function Education() {
                                     Spécialisation en Gestion Finance
                                 <br />
                                 Lycée Paul Eluard à Saint-Denis (mention assez bien)
-                            </p>
+                                </p>
                             </div>
                         </div>
                     </div>

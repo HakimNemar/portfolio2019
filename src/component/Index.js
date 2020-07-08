@@ -1,20 +1,18 @@
-// import 'react-materialize';
-// import 'materialize-css/dist/css/materialize.min.css';
 import 'react-tabs/style/react-tabs.css';
-import React, { useState, useEffect } from 'react';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import LogoHN from '../assets/img/logo.png';
-import Github from '../assets/img/github.png';
-import Linkedin from '../assets/img/linkedin.png';
+import $ from 'jquery';
 import Home from './TabPanel/Accueil';
 import About from './TabPanel/APropos';
-import Skills from './TabPanel/Competences';
-import Contact from './TabPanel/Contact';
-import Experience from './TabPanel/Experience';
-import Education from './TabPanel/Education';
 import Projets from './TabPanel/Projets';
-import $ from 'jquery';
+import Contact from './TabPanel/Contact';
+import LogoHN from '../assets/img/logo.png';
+import Skills from './TabPanel/Competences';
+import Education from './TabPanel/Education';
+import Github from '../assets/img/github.png';
+import Experience from './TabPanel/Experience';
 import pdf from '../assets/pdf/Nemar_Hakim.pdf';
+import Linkedin from '../assets/img/linkedin.png';
+import React, { useState, useEffect } from 'react';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 function Index() {
     const [tabIndex, setTabIndex] = useState(0);

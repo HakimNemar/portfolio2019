@@ -1,5 +1,8 @@
 // @mixin ForPC {
 // }
+.react-tabs__tab-panel--selected {
+    min-width: 700px !important;
+}
 
 .PanelHome {
     .PhotoHome {
@@ -10,6 +13,7 @@
         top: -30px;
     }
 }
+
 .PanelProjets {
     .projets {
         display: grid;
@@ -23,9 +27,11 @@
     }
     @include OverlayImage;
 }
+
 .PanelContact {
     width: 676px !important;
 }
+
 .PanelSkills {
     max-width: 650px;
     margin-bottom: 0 !important;

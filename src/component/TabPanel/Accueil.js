@@ -1,6 +1,6 @@
 import React from 'react';
-import Me from '../../assets/img/myPictures/me.png';
 import pdf from '../../assets/pdf/Nemar_Hakim.pdf';
+import Me from '../../assets/img/myPictures/me.png';
 
 function Home() {
 

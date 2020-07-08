@@ -1,16 +1,16 @@
+import 'pure-react-carousel/dist/react-carousel.es.css';
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
+import ModaleQuiz from '../Modal/ImageQuiz';
 import P4 from '../../assets/img/projets/p4.png';
+import ModaleFreeAds from '../Modal/ImageFreeAds';
 import MVC from '../../assets/img/projets/MVC.png';
+import QuizHome from '../../assets/img/quiz/home.png';
 import Snap from '../../assets/img/projets/snapchat.png';
 import smartphone from '../../assets/img/smartphone.png';
 import Portfolio from '../../assets/img/projets/portfolio.png';
 import BluePrint from '../../assets/img/projets/blueprint.png';
 import FreeAdsAnnonce from '../../assets/img/freeads/annonce.png';
-import QuizHome from '../../assets/img/quiz/home.png';
-import 'pure-react-carousel/dist/react-carousel.es.css';
-import ModaleFreeAds from '../Modal/ImageFreeAds';
-import ModaleQuiz from '../Modal/ImageQuiz';
 
 function Projets() {
     const [show, setShow] = useState(false);
@@ -24,7 +24,7 @@ function Projets() {
             </div>
             <div>
                 <div className="projets">
-                    <span className="projets__item projets__item--1">
+                    <div className="projets__item projets__item--1">
                         <div className="overlay-image">
                             <div className="projetNamePhone">
                                 <div className="text">blueprint.</div>
@@ -45,8 +45,9 @@ function Projets() {
                                 </div>
                             </div>
                         </div>
-                    </span>
-                    <span className="projets__item projets__item--2">
+                    </div>
+                    <hr className="separationProjets" />
+                    <div className="projets__item projets__item--2">
                         <div className="overlay-image">
                             <div className="projetNamePhone">
                                 <div className="text">Snpachat</div>
@@ -59,7 +60,7 @@ function Projets() {
                                 <div className="hover">
                                     <div className="text">
                                         <div className="displayGrid">
-                                            <h5>Recréation de Snapchat. Utilisez l'API fournie et créez une application React qui fonctionne comme Snapchat.</h5>
+                                            <h5>Recréation de Snapchat. Utilisez l'API fournie et créez une application React qui fonctionne comme Snapchat. (Application pour mobile)</h5>
                                             {/* <img src={smartphone} alt="Icon Smartphone" className="smartphone" /> */}
                                             <button className="btn btn-outline-info visite" onClick={() => window.open('http://our-snapchat.surge.sh')}>
                                                 Visiter le site
@@ -70,8 +71,9 @@ function Projets() {
                                 </div>
                             </div>
                         </div>
-                    </span>
-                    <span className="projets__item projets__item--3">
+                    </div>
+                    <hr className="separationProjets" />
+                    <div className="projets__item projets__item--3">
                         <div className="overlay-image">
                             <div className="projetNamePhone">
                                 <div className="text">Quiz</div>
@@ -92,8 +94,9 @@ function Projets() {
                                 </div>
                             </div>
                         </div>
-                    </span>
-                    <span className="projets__item projets__item--4">
+                    </div>
+                    <hr className="separationProjets" />
+                    <div className="projets__item projets__item--4">
                         <div className="overlay-image">
                             <div className="projetNamePhone">
                                 <div className="text">MVC_Free_Ads</div>
@@ -101,7 +104,7 @@ function Projets() {
                             <img className="image projets__img" src={FreeAdsAnnonce} style={{ height: "260px" }} alt="Projet MVC_Free_Ads" />
                             <div>
                                 <div className="projetName">
-                                    <div className="text">MVC_Free_Ads</div>
+                                    <div className="text">MVC_FreeAds</div>
                                 </div>
                                 <div className="hover">
                                     <div className="text">
@@ -114,8 +117,9 @@ function Projets() {
                                 </div>
                             </div>
                         </div>
-                    </span>
-                    <span className="projets__item projets__item--5">
+                    </div>
+                    <hr className="separationProjets" />
+                    <div className="projets__item projets__item--5">
                         <div className="overlay-image">
                             <div className="projetNamePhone">
                                 <div className="text">MVC_PiePHP</div>
@@ -133,8 +137,9 @@ function Projets() {
                                 </div>
                             </div>
                         </div>
-                    </span>
-                    <span className="projets__item projets__item--6">
+                    </div>
+                    <hr className="separationProjets" />
+                    <div className="projets__item projets__item--6">
                         <div className="overlay-image">
                             <div className="projetNamePhone">
                                 <div className="text">Puissance4</div>
@@ -155,8 +160,9 @@ function Projets() {
                                 </div>
                             </div>
                         </div>
-                    </span>
-                    <span className="projets__item projets__item--7">
+                    </div>
+                    <hr className="separationProjets" />
+                    <div className="projets__item projets__item--7">
                         <div className="overlay-image">
                             <div className="projetNamePhone">
                                 <div className="text">Portfolio</div>
@@ -174,7 +180,7 @@ function Projets() {
                                 </div>
                             </div>
                         </div>
-                    </span>
+                    </div>
                 </div>
             </div>
 
