@@ -13,6 +13,7 @@
         display: block !important;
     }
     .tabsHolder {
+        z-index: 1;
         height: 52px;
         .menu {
             display: block;
@@ -27,6 +28,14 @@
             &--selected {
                 background-color: white !important;
             }
+        }
+        .tabtitles {
+            margin: 3px;
+        }
+        #liDisabled {
+            width: 100%;
+            padding: 3px;
+            background: black;
         }
     }
 }
@@ -72,7 +81,7 @@
     }
     .projets {
         display: grid;
-        grid-template-columns: 300px;
+        grid-template-columns: 100%;
         grid-gap: 15px;
         &__img {
             width: 100%;

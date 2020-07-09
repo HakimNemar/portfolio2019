@@ -49,6 +49,7 @@ function Index() {
                     <Tab className="tabPC react-tabs__tab"><h6 className="tabtitles">EDUCATION</h6></Tab>
                     <Tab className="tabPC react-tabs__tab"><h6 className="tabtitles">PROJETS</h6></Tab>
                     <Tab className="tabPC react-tabs__tab"><h6 className="tabtitles">CONTACT</h6></Tab>
+                    <li className="tabPC  disabled" id="liDisabled"></li>
                     <li className="mt-5 CVPDF">
                         <h6><a href={pdf} className="CV" target="_blank" rel="noopener noreferrer">CURRICULUM VITAE <i className="material-icons icon">save_alt</i></a></h6>
                     </li>

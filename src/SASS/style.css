@@ -48,7 +48,7 @@ body .react-tabs__tab {
   padding: 13px 0 !important;
   transition: 0.4s ease-in-out;
 }
-body .react-tabs__tab:not(:last-child) {
+body .react-tabs__tab:not(:nth-last-child(4)) {
   border-bottom: 1px solid #333333;
 }
 body .react-tabs__tab:hover {
@@ -180,6 +180,7 @@ body .CVPhone {
     display: block !important;
   }
   body #Tabs .tabsHolder {
+    z-index: 1;
     height: 52px;
   }
   body #Tabs .tabsHolder .menu {
@@ -195,6 +196,14 @@ body .CVPhone {
   }
   body #Tabs .tabsHolder .react-tabs__tab--selected {
     background-color: white !important;
+  }
+  body #Tabs .tabsHolder .tabtitles {
+    margin: 3px;
+  }
+  body #Tabs .tabsHolder #liDisabled {
+    width: 100%;
+    padding: 3px;
+    background: black;
   }
   body .TabPanel .logo {
     display: none;
@@ -231,7 +240,7 @@ body .CVPhone {
   }
   body .PanelProjets .projets {
     display: grid;
-    grid-template-columns: 300px;
+    grid-template-columns: 100%;
     grid-gap: 15px;
   }
   body .PanelProjets .projets__img {

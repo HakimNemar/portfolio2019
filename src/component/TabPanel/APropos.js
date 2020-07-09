@@ -15,7 +15,7 @@ function About() {
                         <li><b>Nom:</b> Nemar Hakim</li>
                         <li><b>Email:</b> <a href="mailto:nemar.hakim@gmail.com">nemar.hakim@gmail.com</a></li>
                         <li><b>Tel:</b> 0604652636</li>
-                        <li><b>Date de naissance:</b> 10 Octobre 1995</li>
+                        <li><b>Date de naissance:</b> 10 octobre 1995</li>
                         <li><b>Adresse:</b> 118 Boulevard Victor Hugo, Saint-Ouen (93400)</li>
                         <li><b>Situation marital:</b> Pacsé</li>
                     </ul>
