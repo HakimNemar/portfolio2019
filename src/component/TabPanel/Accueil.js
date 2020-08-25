@@ -16,7 +16,7 @@ function Home() {
                 </div>
                 <div className="textDescriptif py-2">
                     <h2>INTEGRATEUR/DEVELOPPEUR WEB - FULL STACK</h2>
-                    <p className="size16">Recherche d'alternance en contrat de professionnalisation en React.js pour la période du 2 novembre 2020 au 29 octobre 2021</p>
+                    <p className="size16">Recherche d'alternance en contrat de professionnalisation en React.js pour la période du 2 novembre 2020 au 29 octobre 2021.</p>
                 </div>
             </div>
             <div className="">

@@ -36,7 +36,7 @@ function Projets() {
                                 </div>
                                 <div className="hover">
                                     <div className="text">
-                                        <h5>Projet phare de l'année. Dans un groupe de 8 étudiants, nous avons dû créer un site e-commerce à partir de zéro, marketing inclus.</h5>
+                                        <h5>Projet phare de l'année. Dans un groupe de huit étudiants, nous avons dû créer un site e-commerce à partir de rien, marketing inclu.</h5>
                                         <button className="btn btn-outline-info visite" onClick={() => window.open('https://e-8commerce-client.herokuapp.com')}>
                                             Visiter le site
                                         </button>
@@ -85,7 +85,7 @@ function Projets() {
                                 </div>
                                 <div className="hover">
                                     <div className="text">
-                                        <h5>Création  d'un site Web de quiz que l'utilisateur peut créer et répondre avec un système de login.</h5>
+                                        <h5>Création d'un site web de quiz que l'utilisateur peut créer grâce à un système de login, auquel il peut y répondre.</h5>
                                         <button className="btn btn-outline-info visite" onClick={() => setShowQuiz(true)}>
                                             Regarder les photos
                                         </button>
