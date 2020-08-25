@@ -23,7 +23,7 @@ function Education() {
                                 <p>
                                     Samsung Campus - &#123;Epitech&#125; à Saint-Ouen
                                 <br />
-                                Pédagogie d’apprentissage autonome par projets (individuel et en groupe)
+                                Pédagogie d’apprentissage autonome par projets (individuel et en groupe).
                                 </p>
                             </div>
                         </div>

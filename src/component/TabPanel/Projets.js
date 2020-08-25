@@ -174,7 +174,7 @@ function Projets() {
                                 </div>
                                 <div className="hover">
                                     <div className="text">
-                                        <h5>Vous êtes sur mon site</h5>
+                                        <h5>Vous êtes sur mon site !</h5>
                                         <h6 className="codeSource" onClick={() => window.open('https://github.com/HakimNemar/portfolio')}>code source</h6>
                                     </div>
                                 </div>
