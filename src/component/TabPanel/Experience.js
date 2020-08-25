@@ -18,7 +18,7 @@ function Experience() {
                         <img src={Flash} alt="Paul Eluard" className="imageExperience" />
                         <div className="ml-4 textExp">
                             <h5>Chauffeur Livreur</h5>
-                            <p className="gray">Montrouge - châtillon</p>
+                            <p className="gray">Montrouge - Châtillon</p>
                             <p>
                                 Livraison de produits pharmaceutiques.
                             </p>
