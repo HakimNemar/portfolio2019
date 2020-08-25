@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9782ccc78dc4f0bb63f26a473b8e18e5",
+    "revision": "3cfd492431e8403d5a929def14cd3d3c",
     "url": "/portfolio/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/css/2.7019ff95.chunk.css"
   },
   {
-    "revision": "5ee4523b9f950c8863e8",
+    "revision": "b861557ed79540cec0ca",
     "url": "/portfolio/static/css/main.3b93afa6.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.70566890.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5ee4523b9f950c8863e8",
-    "url": "/portfolio/static/js/main.df647783.chunk.js"
+    "revision": "b861557ed79540cec0ca",
+    "url": "/portfolio/static/js/main.fcd2ece8.chunk.js"
   },
   {
     "revision": "7a6cc99bd8f08f9fa6ec",
@@ -80,8 +80,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/css3.f5b9f32a.png"
   },
   {
-    "revision": "30482c2e8ae6c359602d80ceef807326",
-    "url": "/portfolio/static/media/dashboard.30482c2e.png"
+    "revision": "8b10c999fcd7779935a0f2d00258f46b",
+    "url": "/portfolio/static/media/dashboard.8b10c999.png"
   },
   {
     "revision": "b78b4a441865504becc00f0a629e4dac",
@@ -164,8 +164,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/react.f0197c8a.png"
   },
   {
-    "revision": "2c51e8d9bdb410dfe977fcd194d869f0",
-    "url": "/portfolio/static/media/register.2c51e8d9.png"
+    "revision": "b8263fe4e8eaa71fec6093aade4427dc",
+    "url": "/portfolio/static/media/register.b8263fe4.png"
   },
   {
     "revision": "70cdd8e9336c150c7725fa27b69059f3",
@@ -180,7 +180,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/symfony.698dde56.png"
   },
   {
-    "revision": "198e988a8d651329e73c16571d934096",
-    "url": "/portfolio/static/media/update.198e988a.png"
+    "revision": "1bb9cef6339c656661cbbe016ed0e054",
+    "url": "/portfolio/static/media/update.1bb9cef6.png"
   }
 ]);
