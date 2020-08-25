@@ -19,9 +19,9 @@ function Education() {
                         <div className="img_Text">
                             <img src={Campus} alt="Paul Eluard" className="imageEducation" />
                             <div className="ml-4 textEdu">
-                                <h5>Intégrateur Développeur web – Full Stack (Bac + 2)</h5>
+                                <h5>Intégrateur Développeur web – Full Stack (Bac +2)</h5>
                                 <p>
-                                    Samsung Campus - &#123;Epitceh&#125; à Saint-Ouen
+                                    Samsung Campus - &#123;Epitech&#125; à Saint-Ouen
                                 <br />
                                 Pédagogie d’apprentissage autonome par projets (individuel et en groupe)
                                 </p>
@@ -55,7 +55,7 @@ function Education() {
                                 <p>
                                     Spécialisation en Gestion Finance
                                 <br />
-                                Lycée Paul Eluard à Saint-Denis (mention assez bien)
+                                Lycée Paul Eluard à Saint-Denis (mention assez bien).
                                 </p>
                             </div>
                         </div>

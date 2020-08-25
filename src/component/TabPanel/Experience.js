@@ -4,7 +4,6 @@ import ICTS from '../../assets/img/experience/icts.png';
 import Facilites from '../../assets/img/experience/facilitess.png';
 
 function Experience() {
-
     return (
         <>
             <div className="container PanelExperience m-5 pl-5">
@@ -21,7 +20,7 @@ function Experience() {
                             <h5>Chauffeur Livreur</h5>
                             <p className="gray">Montrouge - Chatillion</p>
                             <p>
-                                Livraison de produits pharmaceutiques
+                                Livraison de produits pharmaceutiques.
                             </p>
                         </div>
                     </div>
@@ -37,7 +36,7 @@ function Experience() {
                             <h5>Agent de Sûreté Aéroportuaire</h5>
                             <p className="gray">Roissy Charles De Gaulle</p>
                             <p>
-                                Contrôler l'accès des passagers à l'avion, effectuer les contrôles essentiels à la surveillance du site et à la prévention des risques
+                                Contrôler l'accès des passagers à l'avion, effectuer les contrôles essentiels à la surveillance du site et à la prévention des risques.
                             </p>
                         </div>
                     </div>
@@ -54,7 +53,7 @@ function Experience() {
                             <p className="gray">SNCF à Saint-Denis</p>
                             <p>
                                 Interventions diverses (déplacement de petit mobilier, réapprovisionnement des
-                                Consommables), gestion des archives, affranchissement/répartition du courrier
+                                Consommables), gestion des archives, affranchissement/répartition du courrier.
                             </p>
                         </div>
                     </div>
@@ -72,7 +71,7 @@ function Experience() {
                             <p>
                                 Courrier et gestion documentaire (réceptionner, trier, dispatcher), gestion de salles
                                 de réunion (agencement des tables et chaises, vérification du matériel audiovisuel),
-                                factotum (montage de meubles, fixation de tableaux, manutentions diverses)
+                                factotum (montage de meubles, fixation de tableaux, manutentions diverses).
                             </p>
                         </div>
                     </div>

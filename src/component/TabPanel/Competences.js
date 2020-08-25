@@ -24,9 +24,8 @@ function Skills() {
             <div className="container PanelSkills m-5 pl-5">
                 <h1 className="title">COMPETENCES</h1>
                 <hr className="HR" />
-                <p className="textSkills">Voici mes compétences apprises jusqu'à présent classée par ordre de préfèrences.</p>
+                <p className="textSkills">Voici mes compétences acquises jusqu'à présent classées par ordre de préfèrence.</p>
                 <div>
-
                     <div className="mySkills">
                         <div className="">
                             <h2 className="styleDev">Front-End:</h2>
@@ -137,7 +136,6 @@ function Skills() {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </>
