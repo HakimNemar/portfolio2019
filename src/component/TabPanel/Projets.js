@@ -89,7 +89,7 @@ function Projets() {
                                         <button className="btn btn-outline-info visite" onClick={() => setShowQuiz(true)}>
                                             Regarder les photos
                                         </button>
-                                        <h6 className="codeSource" onClick={() => window.open('https://github.com/HakimNemar/Puissance4')}>code source</h6>
+                                        <h6 className="codeSource" onClick={() => window.open('https://github.com/HakimNemar/MVC_My_Quiz')}>code source</h6>
                                     </div>
                                 </div>
                             </div>
