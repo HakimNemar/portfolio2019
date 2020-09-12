@@ -50,7 +50,7 @@ function Projets() {
                     <div className="projets__item projets__item--2">
                         <div className="overlay-image">
                             <div className="projetNamePhone">
-                                <div className="text">Snpachat</div>
+                                <div className="text">Snapchat</div>
                             </div>
                             <img className="image projets__img" src={Snap} alt="Projet Snpachat" />
                             <div>
