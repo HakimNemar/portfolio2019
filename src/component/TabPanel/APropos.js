@@ -17,7 +17,7 @@ function About() {
                         <li><b>Tel:</b> 0604652636</li>
                         <li><b>Date de naissance:</b> 10 octobre 1995</li>
                         <li><b>Adresse:</b> 118 Boulevard Victor Hugo, Saint-Ouen (93400)</li>
-                        <li><b>Situation marital:</b> Pacsé</li>
+                        <li><b>Situation maritale:</b> Pacsé</li>
                     </ul>
                     <div className="auDessus">
                         <h5 className="mt-5 mb-3"><b>PROFIL PROFESSIONNEL</b></h5>
