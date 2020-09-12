@@ -52,10 +52,10 @@ function Projets() {
                             <div className="projetNamePhone">
                                 <div className="text">Snapchat</div>
                             </div>
-                            <img className="image projets__img" src={Snap} alt="Projet Snpachat" />
+                            <img className="image projets__img" src={Snap} alt="Projet Snapchat" />
                             <div>
                                 <div className="projetName">
-                                    <div className="text">Snpachat</div>
+                                    <div className="text">Snapchat</div>
                                 </div>
                                 <div className="hover">
                                     <div className="text">
